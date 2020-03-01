@@ -82,5 +82,5 @@ foreach ($samples as $sample) {
     if (strlen($sample[0]) > 100) {
         $sample = substr($sample[0], 0, 100) . '...';
     }
-    echo sprintf('Success: %s | Expected: %s | Answer: %s | Sample: %s' . PHP_EOL . PHP_EOL, $success, $expected, $result, json_encode($sample));
+    printf('Success: %s | Expected: %s | Answer: %s | Sample: %s' . PHP_EOL . PHP_EOL, $success, $expected, $result, json_encode($sample));
 }

@@ -38,5 +38,5 @@ foreach ($samples as $sampleSet) {
     $expected = $sampleSet['expected'];
     $result = $method($sample, $length);
     $success = $result == $expected ? 'Y' : 'N';
-    echo sprintf('Success: %s | Expected: %s | Answer: %s | Sample: [%s]' . PHP_EOL, $success, $expected, $result, $sample);
+    printf('Success: %s | Expected: %s | Answer: %s | Sample: [%s]' . PHP_EOL, $success, $expected, $result, $sample);
 }

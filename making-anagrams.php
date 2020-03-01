@@ -61,5 +61,5 @@ $samples = [
 foreach ($samples as $sample) {
     $deletions = makingAnagrams($sample[0], $sample[1]);
     $success = $deletions == $sample[2] ? 'Y' : 'N';
-    echo sprintf('Success: %s | Expected: %d | Deletions: %d | Sample set: %s' . PHP_EOL, $success, $sample[2], $deletions, json_encode($sample));
+    printf('Success: %s | Expected: %d | Deletions: %d | Sample set: %s' . PHP_EOL, $success, $sample[2], $deletions, json_encode($sample));
 }

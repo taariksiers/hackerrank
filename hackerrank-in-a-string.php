@@ -29,5 +29,5 @@ $samples = [
 foreach ($samples as $sample => $expected) {
     $result = $method($sample);
     $success = $result == $expected ? 'Y' : 'N';
-    echo sprintf('Success: %s | Expected: %s | Answer: %s | Sample set: %s' . PHP_EOL, $success, $expected, $result, json_encode($sample));
+    printf('Success: %s | Expected: %s | Answer: %s | Sample set: %s' . PHP_EOL, $success, $expected, $result, json_encode($sample));
 }

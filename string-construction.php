@@ -13,7 +13,7 @@ function stringConstruction($s): int
     
 
     // array_walk($letterCounts, function ($count, $letter) {
-    //     echo sprintf('letter %s count %s' . PHP_EOL, $letter, $count);
+    //     printf('letter %s count %s' . PHP_EOL, $letter, $count);
     // });
 
     // reset($letterCounts);
@@ -55,5 +55,5 @@ $samples = [
 foreach ($samples as $sample => $expected) {
     $result = $method($sample);
     $success = $result == $expected ? 'Y' : 'N';
-    echo sprintf('Success: %s | Expected: %s | Answer: %s ' . PHP_EOL, $success, $expected, $result);
+    printf('Success: %s | Expected: %s | Answer: %s ' . PHP_EOL, $success, $expected, $result);
 }

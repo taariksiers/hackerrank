@@ -74,5 +74,5 @@ foreach ($samples as $sample => $expected) {
         $sample = substr($sample, 0, 100) . '...';
     }
 
-    echo sprintf('Success: %s | Expected: %s | Answer: %s | Sample: %s' . PHP_EOL, $success, $expected, $result, json_encode([ $sample => $expected]));
+    printf('Success: %s | Expected: %s | Answer: %s | Sample: %s' . PHP_EOL, $success, $expected, $result, json_encode([ $sample => $expected]));
 }

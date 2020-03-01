@@ -42,5 +42,5 @@ foreach ($samples as $sample => $expected) {
     $sample = explode(' ', $sample);
     $result = $method(count($sample), $sample);
     $success = $result == $expected ? 'Y' : 'N';
-    echo sprintf('Success: %s | Expected: %s | Answer: %s ' . PHP_EOL, $success, $expected, $result);
+    printf('Success: %s | Expected: %s | Answer: %s ' . PHP_EOL, $success, $expected, $result);
 }
