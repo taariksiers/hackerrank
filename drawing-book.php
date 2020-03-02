@@ -24,10 +24,10 @@ function pageCount($n, $p): int
 
     $debug && printf('forwardDiff %d | $backwardDiff %d' . PHP_EOL, $forwardDiff, $backwardDiff);
 
-    $fowardCondition = $p == 1;
+    $forwardCondition = $p == 1;
     $backCondition = ($backwardDiff == 1 && $n %2 !== 0) || $backwardDiff == 0;
 
-    if ($fowardCondition || $backCondition) {
+    if ($forwardCondition || $backCondition) {
         $debug && printf('Simple non page condition fulfilled %d | $backwardDiff %d' . PHP_EOL, $forwardDiff, $backwardDiff);
         return 0;
     }
