@@ -1,8 +1,30 @@
 # Hackerrank exercises
 
 Bookmark repo for all [Hackerrank](https://www.hackerrank.com/) exercises attempted.
+Mostly solved with PHP.
 
 ## Exercises:
-- [Beautiful Binary String](https://www.hackerrank.com/challenges/beautiful-binary-string/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign)
-- [Counting Valleys](https://www.hackerrank.com/challenges/counting-valleys/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup&h_r=next-challenge&h_v=zen)
-- 
+- [Beautiful Binary String](beautiful-binary-string.php)
+- [Counting Valleys](counting-valleys.php)
+- [Drawing Book](drawing-book.php)
+- [Electronics Shop](electronics-shop.php)
+- [Find The Median](find-the-median.php)
+- [Game of Thrones](game-of-thrones.php)
+- [Hackerrank in a string](hackerrank-in-a-string.php)
+- [Halloweeen Party](halloween-party.php)
+- [Ice-cream Parlor](icecream-parlor.py) (`Python`)
+- [Jumping on the clouds](jumping-on-the-clouds.php)
+- [Lonely Integer](lonely-integer.php)
+- [Making anagrams](making-anagrams.php)
+- [Palindrome Index](palindrome-index.php)
+- [Repeated String](repeated-string.php)
+- [Running time](runningtime.php)
+- [Sherlock and the valid string](sherlock-and-valid-string.php)
+- [Sock Merchant](sock-merchant.php)
+- [String Construction](string-construction.php)
+- [Utopian tree](utopian-tree.php)
+
+## Algorithms Sorting
+- [Insertion Sort 1](insertionsort1.php)
+- [Insertion Sort 2](insertionsort2.php)
+
