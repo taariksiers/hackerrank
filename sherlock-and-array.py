@@ -31,19 +31,17 @@ def balancedSums(arr):
     balanced = False
     last_num = None
     total_sum = sum(arr)
+    right = total_sum - arr[0]
 
     for index, num in enumerate(arr):
 
-        # if last_num is None:
         if index == 0:
             left = 0
         else:
+            right = total_sum - left
             left += last_num
 
         last_num = num
-
-        # right = total_sum - num
-        right = sum(arr[index+1:])
 
         debug and print(f'DEBUG | index {index} | num {num} | LEFT {left} | RIGHT {right}')
         if left == right:
@@ -58,7 +56,7 @@ test_cases = [
     ['1 2 3', 'NO'],
     ['1 2 3 3', 'YES'],
     ['5 6 8 11', 'YES'],
-    ['2 0 0 0', 'NO']
+    ['2 0 0 0', 'YES']
 ]
 
 for test_case in test_cases:
