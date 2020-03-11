@@ -20,11 +20,10 @@ Mostly solved with PHP.
 - [Repeated String](repeated-string.php)
 - [Running time](runningtime.php)
 - [Sherlock and the valid string](sherlock-and-valid-string.php)
-- [Sock Merchant](sock-merchant.php)
+- [Sock Merchant](sock-merchant.php)~~~~
 - [String Construction](string-construction.php)
 - [Utopian tree](utopian-tree.php)
 
 ## Algorithms Sorting
-- [Insertion Sort 1](insertionsort1.php)
-- [Insertion Sort 2](insertionsort2.php)
-
+- [Insertion Sort 1](insertionsort1.php) | ([Python version](insertionsort1.py))
+- [Insertion Sort 2](insertionsort2.php) | ([Python version](insertionsort2.py))
