@@ -30,7 +30,8 @@ def countingSort(arr):
     num_counter = dict()
     for num in arr:
         if num in num_counter:
-            num_counter[]
+            pass
+            # num_counter
 
 
 
