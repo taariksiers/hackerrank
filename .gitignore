@@ -1,9 +1,12 @@
 .DS_Store
+.env
 .idea
 .Python
+.python-version
 .venv
 __pycache__/
 env/
 build/
 node_modules/
 vendor/
+*.pyc
