@@ -1,5 +1,5 @@
 asgiref==3.3.1
-Django==3.1.7
+Django==3.1.8
 Faker==6.6.2
 mock==4.0.3
 mysqlclient==2.0.3
