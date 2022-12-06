@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 from pyutils.util import Util
 from solutions_py import Solutions
 

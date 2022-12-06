@@ -9,7 +9,7 @@ class Util:
     @staticmethod
     def parse_args() -> tuple:
         """
-        Boiler plate refactor for stock arg parsing for HR solutions
+        Boilerplate refactor for stock arg parsing for HR solutions
         :return: tuple
         """
         parser = argparse.ArgumentParser()

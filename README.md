@@ -27,6 +27,9 @@ Solutions initially done in PHP but now Python going forward.
 - [String Construction](solutions_php/string-construction.php)
 - [Utopian tree](solutions_php/utopian-tree.php)
 
+## Python Challenges:
+- [List Comprehensions](solutions_py/list_comprehensions.py)
+
 ## Algorithms Sorting
 - [Insertion Sort 1](interview_practice/insertionsort1.py) | ([PHP version](solutions_php/insertionsort1.php))
 - [Insertion Sort 2](interview_practice/insertionsort2.py) | ([PHP version](solutions_php/insertionsort2.php))
