@@ -35,12 +35,12 @@ class MissingNumbers(Harness):
     @staticmethod
     def _test_cases() -> list:
         """
-        Format: dictionary item with 'kwargs' for inputs, 'result' for expected output
+        Format: dictionary item with 'kwargs' for inputs
         :return: list
         """
         return [
-            {'kwargs': {'arr': [7, 2, 5, 3, 5, 3], 'brr': [7, 2, 5, 4, 6, 3, 5, 3]}, 'result': [4, 6]},
+            {'kwargs': {'arr': [7, 2, 5, 3, 5, 3], 'brr': [7, 2, 5, 4, 6, 3, 5, 3]}, 'expected': [4, 6]},
             {'kwargs': {'arr': [203, 204, 205, 206, 207, 208, 203, 204, 205, 206],
                         'brr': [203, 204, 204, 205, 206, 207, 205, 208, 203, 206, 205, 206, 204]},
-             'result': [204, 205, 206]}
+             'expected': [204, 205, 206]}
         ]

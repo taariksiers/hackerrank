@@ -41,17 +41,17 @@ class SherlockAndArray(Harness):
                 break
 
         debug and print(f'DEBUG | Balanced {balanced}')
-        return 'YES' if balanced else 'NO'
+        return balanced
 
     @staticmethod
     def _test_cases() -> list:
         """
-        Format: dictionary item with 'kwargs' for inputs, 'result' for expected output
+        Format: dictionary item with 'kwargs' for inputs
         :return: list
         """
         return [
-            {'kwargs': {'arr': [1, 2, 3]}, 'result': 'NO'},
-            {'kwargs': {'arr': [1, 2, 3, 3]}, 'result': 'YES'},
-            {'kwargs': {'arr': [5, 6, 8, 11]}, 'result': 'YES'},
-            {'kwargs': {'arr': [2, 0, 0, 0]}, 'result': 'YES'}
+            {'kwargs': {'arr': [1, 2, 3]}, 'expected': False},
+            {'kwargs': {'arr': [1, 2, 3, 3]}, 'expected': True},
+            {'kwargs': {'arr': [5, 6, 8, 11]}, 'expected': True},
+            {'kwargs': {'arr': [2, 0, 0, 0]}, 'expected': True}
         ]

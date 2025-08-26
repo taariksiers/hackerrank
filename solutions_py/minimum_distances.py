@@ -34,11 +34,11 @@ class MinimumDistances(Harness):
     @staticmethod
     def _test_cases() -> list:
         """
-        Format: dictionary item with 'kwargs' for inputs, 'result' for expected output
+        Format: dictionary item with 'kwargs' for inputs
         :return: list
         """
         return [
-            {'kwargs': {'a': [1, 2]}, 'result': -1},
-            {'kwargs': {'a': [3, 2, 1, 2, 3]}, 'result': 2},
-            {'kwargs': {'a': [7, 1, 3, 4, 1, 7]}, 'result': 3}
+            {'kwargs': {'a': [1, 2]}, 'expected': -1},
+            {'kwargs': {'a': [3, 2, 1, 2, 3]}, 'expected': 2},
+            {'kwargs': {'a': [7, 1, 3, 4, 1, 7]}, 'expected': 3}
         ]

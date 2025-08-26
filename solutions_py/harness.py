@@ -1,4 +1,5 @@
 from pyutils import Util
+from rich import print
 
 
 class Harness:
@@ -19,6 +20,11 @@ class Harness:
         for test_case in self._test_cases():
             print(f"Case Arguments: {test_case['kwargs']}")
             result = self.solution(**test_case['kwargs'])
-            success = result == test_case['result']
-            print(f"Expected {Util.green_text(test_case['result'])} | Result {Util.format_output(success, result)}")
-            print(f"Success: {Util.format_output(result, success)}\n------------------")
+            success = result == test_case['expected']
+            print(f"Expected: [purple]{test_case['expected']}[/purple]")
+
+            output_color = "green" if success else "red"
+            print(f"Result: [{output_color}]{result}[/{output_color}]")
+            print(f"Success: [{output_color}]{success}[/{output_color}]")
+
+            print("\n------------------")

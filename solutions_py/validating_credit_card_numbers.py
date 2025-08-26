@@ -65,23 +65,23 @@ class ValidatingCreditCardNumbers(Harness):
     @staticmethod
     def _test_cases() -> list:
         """
-        Format: dictionary item with 'kwargs' for inputs, 'result' for expected output
+        Format: dictionary item with 'kwargs' for inputs
         :return: list
         """
         return [
-            {"kwargs": {"arr": "4123456789123456"}, "result": "Valid"},
-            {"kwargs": {"arr": "5123-4567-8912-3456"}, "result": "Valid"},
-            {"kwargs": {"arr": "61234-567-8912-3456"}, "result": "Invalid"},
-            {"kwargs": {"arr": "4123356789123456"}, "result": "Valid"},
-            {"kwargs": {"arr": "5133-3367-8912-3456"}, "result": "Invalid"},
-            {"kwargs": {"arr": "5123 - 3567 - 8912 - 3456"}, "result": "Invalid"},
-            {"kwargs": {"arr": "7165863385679329"}, "result": "Invalid"},
-            {"kwargs": {"arr": "6175824393389297"}, "result": "Valid"},
-            {"kwargs": {"arr": "5252248277877418"}, "result": "Valid"},
-            {"kwargs": {"arr": "9563584181869815"}, "result": "Invalid"},
-            {"kwargs": {"arr": "5179123424576876"}, "result": "Valid"},
-            {"kwargs": {"arr": "3695-7963-  5827-75"}, "result": "Invalid"},
-            {"kwargs": {"arr": "4143-4672-8798-2968-2968"}, "result": "Invalid"},
-            {"kwargs": {"arr": "6865---------------3965---------------1564-------------2918"}, "result": "Invalid"},
-            {"kwargs": {"arr": "6865396515642918"}, "result": "Valid"},
+            {"kwargs": {"arr": "4123456789123456"}, "expected": "Valid"},
+            {"kwargs": {"arr": "5123-4567-8912-3456"}, "expected": "Valid"},
+            {"kwargs": {"arr": "61234-567-8912-3456"}, "expected": "Invalid"},
+            {"kwargs": {"arr": "4123356789123456"}, "expected": "Valid"},
+            {"kwargs": {"arr": "5133-3367-8912-3456"}, "expected": "Invalid"},
+            {"kwargs": {"arr": "5123 - 3567 - 8912 - 3456"}, "expected": "Invalid"},
+            {"kwargs": {"arr": "7165863385679329"}, "expected": "Invalid"},
+            {"kwargs": {"arr": "6175824393389297"}, "expected": "Valid"},
+            {"kwargs": {"arr": "5252248277877418"}, "expected": "Valid"},
+            {"kwargs": {"arr": "9563584181869815"}, "expected": "Invalid"},
+            {"kwargs": {"arr": "5179123424576876"}, "expected": "Valid"},
+            {"kwargs": {"arr": "3695-7963-  5827-75"}, "expected": "Invalid"},
+            {"kwargs": {"arr": "4143-4672-8798-2968-2968"}, "expected": "Invalid"},
+            {"kwargs": {"arr": "6865---------------3965---------------1564-------------2918"}, "expected": "Invalid"},
+            {"kwargs": {"arr": "6865396515642918"}, "expected": "Valid"},
         ]

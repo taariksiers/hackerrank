@@ -28,10 +28,10 @@ class AthleteSort(Harness):
     @staticmethod
     def _test_cases() -> list:
         """
-        Format: dictionary item with 'kwargs' for inputs, 'result' for expected output
+        Format: dictionary item with 'kwargs' for inputs
         :return: list
         """
         return [
             {"kwargs": {"arr": ["5 3", "10 2 5", "7 1 0", "9 9 9", "1 23 12", "6 5 9", "1"]},
-             "result": ["7 1 0", "10 2 5", "6 5 9", "9 9 9", "1 23 12"]}
+             "expected": ["7 1 0", "10 2 5", "6 5 9", "9 9 9", "1 23 12"]}
         ]

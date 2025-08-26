@@ -12,9 +12,9 @@ class NonDivisibleSubset(Harness):
     @staticmethod
     def _test_cases() -> list:
         """
-        Format: dictionary item with 'kwargs' for inputs, 'result' for expected output
+        Format: dictionary item with 'kwargs' for inputs
         :return: list
         """
         return [
-            # {'kwargs': {'m': 4, 'arr': [1, 4, 5, 3, 2]}, 'result': [1, 4]},
+            # {'kwargs': {'m': 4, 'arr': [1, 4, 5, 3, 2]}, 'expected': [1, 4]},
         ]

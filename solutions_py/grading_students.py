@@ -39,5 +39,8 @@ class GradingStudents(Harness):
         :return: list
         """
         return [
-            {"kwargs": {"arr": [73, 67, 38, 33]}, "result": [75, 67, 40, 33]}
-        ]
+            {
+                "kwargs": {"arr": [73, 67, 38, 33]},
+                "expected": [75, 67, 40, 33]
+                }
+                ]

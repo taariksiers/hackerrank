@@ -41,8 +41,8 @@ Solutions initially done in PHP but now Python going forward.
 ## Python requirements.txt
 
 ```bash
-python -m pip install -r requirements-to-freeze.txt --upgrade
-python -m pip freeze > requirements.txt
+python3 -m pip install -r requirements-to-freeze.txt --upgrade
+python3 -m pip freeze > requirements.txt
 ```
 
 ## Running Python solutions
