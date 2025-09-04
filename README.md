@@ -4,6 +4,11 @@ Bookmark repo for all [Hackerrank](https://www.hackerrank.com/) exercises attemp
 
 Solutions initially done in PHP but now Python going forward.
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+<!-- https://github.com/Ileriayo/markdown-badges -->
+
+
 ## Exercises:
 - [Beautiful Binary String](solutions_php/beautiful-binary-string.php)
 - [Counting Valleys](solutions_php/counting-valleys.php)
@@ -41,8 +46,13 @@ Solutions initially done in PHP but now Python going forward.
 ## Python requirements.txt
 
 ```bash
+pyenv shell [your preferred version here]
+python3 -m venv venv
 python3 -m pip install -r requirements-to-freeze.txt --upgrade
 python3 -m pip freeze > requirements.txt
+
+cd solutions_py
+PYTHONPATH=$PYTHONPATH:$(pwd)
 ```
 
 ## Running Python solutions
@@ -50,7 +60,7 @@ python3 -m pip freeze > requirements.txt
 **Filename example**: `solutions_py/ice_cream_parlor.py`
 
 ```bash
-python solution_runner.py --solution=ice_cream_parlor
+./solution_runner.py --solution=ice_cream_parlor
 ```
 <details>
     <Summary>Sample output</Summary>
@@ -84,12 +94,12 @@ Success: True
 Debug:
 
 ```bash
-python solution_runner.py --solution=ice_cream_parlor --debug=1
+./solution_runner.py --solution=ice_cream_parlor --debug=1
 ```
 
 Help
 ```bash
-python solution_runner.py --solution=ice_cream_parlor --show_help
+./solution_runner.py --solution=ice_cream_parlor --show_help
 ```
 
 <details>
